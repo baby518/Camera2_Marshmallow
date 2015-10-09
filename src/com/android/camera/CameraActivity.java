@@ -2261,6 +2261,16 @@ public class CameraActivity extends QuickActivity
 
     @Override
     public void onBackPressed() {
+        /* ZhangChao time:2015-04-21,real delete it when back to camera's preview. START ++++ */
+        // Real deletion is postponed until the next user interaction after
+        // the gesture that triggers deletion. Until real deletion is
+        // performed, users can click the undo button to bring back the
+        // image that they chose to delete.
+        if (mPendingDeletion && !mIsUndoingDeletion) {
+            performDeletion();
+        }
+        /* ZhangChao time:2015-04-21,real delete it when back to camera's preview. END ---- */
+
         if (!mCameraAppUI.onBackPressed()) {
             if (!mCurrentModule.onBackPressed()) {
                 super.onBackPressed();

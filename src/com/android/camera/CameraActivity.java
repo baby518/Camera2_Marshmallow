@@ -121,6 +121,7 @@ import com.android.camera.session.CaptureSessionManager.SessionListener;
 import com.android.camera.settings.AppUpgrader;
 import com.android.camera.settings.CameraSettingsActivity;
 import com.android.camera.settings.Keys;
+import com.android.camera.settings.Keys_Plus;
 import com.android.camera.settings.PictureSizeLoader;
 import com.android.camera.settings.ResolutionSetting;
 import com.android.camera.settings.ResolutionUtil;
@@ -1509,7 +1510,11 @@ public class CameraActivity extends QuickActivity
             mFatalErrorHandler.onGenericCameraAccessFailure();
         }
         profile.mark("computePictureSizes");
-        Keys.setDefaults(mSettingsManager, mAppContext);
+        /* ZhangChao time:2015-04-23, use my custom Keys. ORIG ++++ */
+//        Keys.setDefaults(mSettingsManager, mAppContext);
+        /* ZhangChao time:2015-04-23, use my custom Keys. START ++++ */
+        Keys_Plus.setDefaults(mSettingsManager, mAppContext);
+        /* ZhangChao time:2015-04-23, use my custom Keys. END ---- */
 
         mResolutionSetting = new ResolutionSetting(mSettingsManager, mOneCameraManager,
                 getContentResolver());

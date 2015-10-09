@@ -50,12 +50,12 @@ android {
         main {
             manifest.srcFile 'AndroidManifest.xml'
             def src_framework_ex = ['src_framework_ex/portability/src','src_framework_ex/public/src','src_framework_ex/utils/src']
-            def src = ['src','src_pd','src_pd_gcam', src_framework_ex]
+            def src = ['src','src_pd','src_pd_gcam',src_framework_ex,'src_plus']
             java.srcDirs = src
             resources.srcDirs = src
             aidl.srcDirs = src
             renderscript.srcDirs = src
-            res.srcDirs = ['res','res_p']
+            res.srcDirs = ['res','res_p','res_plus']
             assets.srcDirs = ['assets']
             jniLibs.srcDirs = ['libs']
         }

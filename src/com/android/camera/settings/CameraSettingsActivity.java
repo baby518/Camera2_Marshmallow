@@ -116,7 +116,11 @@ public class CameraSettingsActivity extends FragmentActivity {
         actionBar.setTitle(R.string.mode_settings);
 
         String prefKey = getIntent().getStringExtra(PREF_SCREEN_EXTRA);
-        CameraSettingsFragment dialog = new CameraSettingsFragment();
+        /* ZhangChao time:2015-02-11,Use my Custom. ORIG ++++ */
+//        CameraSettingsFragment dialog = new CameraSettingsFragment();
+        /* ZhangChao time:2015-02-11,Use my Custom. START ++++ */
+        CameraSettingsFragment_Plus dialog = new CameraSettingsFragment_Plus();
+        /* ZhangChao time:2015-02-11,Use my Custom. END ++++ */
         Bundle bundle = new Bundle(1);
         bundle.putString(PREF_SCREEN_EXTRA, prefKey);
         bundle.putBoolean(HIDE_ADVANCED_SCREEN, hideAdvancedScreen);

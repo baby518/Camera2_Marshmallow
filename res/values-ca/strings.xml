@@ -217,8 +217,8 @@
     <string name="media_processing_content_description" msgid="8138587719107183754">"Processament de fitxers multimèdia"</string>
     <string name="accessibility_mode_list_toggle" msgid="4784230103566918645">"Activa la llista de modes"</string>
     <string name="btn_mode_list_toggle" msgid="3986242443098400164">"Llista de modes"</string>
-    <string name="accessibility_filmstrip_toggle" msgid="6966978483643396442">"Activa la tira de vídeo"</string>
-    <string name="btn_filmstrip_toggle" msgid="3666693972882351490">"Tira de vídeo"</string>
+    <string name="accessibility_filmstrip_toggle" msgid="6966978483643396442">"Activa la tira de pel·lícula"</string>
+    <string name="btn_filmstrip_toggle" msgid="3666693972882351490">"Tira de pel·lícula"</string>
     <string name="accessibility_mode_zoom_plus" msgid="4967389173992713073">"Apropa"</string>
     <string name="btn_zoom_plus" msgid="4645138949375961656">"Apropa"</string>
     <string name="accessibility_mode_zoom_minus" msgid="8850636036927992409">"Allunya"</string>

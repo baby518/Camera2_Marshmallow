@@ -95,7 +95,7 @@ public class Futures2 {
         // Futures.allAsList is used instead of Futures.successfulAsList because
         // allAsList will propagate the failures instead of null values to the
         // parameters of the supplied function.
-        ListenableFuture<List<Object>> result = Futures.allAsList(futures);
+        ListenableFuture<List<Object>> result = Futures.<Object>allAsList(futures);
         return Futures.transform(result, new AsyncFunction<List<Object>, TResult>() {
             @Override
             public ListenableFuture<TResult> apply(@Nullable List<Object> list) throws Exception {
@@ -140,7 +140,7 @@ public class Futures2 {
         // Futures.allAsList is used instead of Futures.successfulAsList because
         // allAsList will propagate the failures instead of null values to the
         // parameters of the supplied function.
-        ListenableFuture<List<Object>> result = Futures.allAsList(futures);
+        ListenableFuture<List<Object>> result = Futures.<Object>allAsList(futures);
         return Futures.transform(result, new AsyncFunction<List<Object>, TResult>() {
             @Override
             public ListenableFuture<TResult> apply(@Nullable List<Object> list) throws Exception {
